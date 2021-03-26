@@ -11,11 +11,9 @@ def circumference(a, b, t):
     stop = False
     x = 0
     y = b
-    how = 0
     while(stop == False):
         x_next = next_point(x, y, a, b, t)
         y_next = sqrt(abs(((b**2) - ((b/a)**2)*(x_next**2))))
-        how += 1
         x = x_next
         y = y_next
         if (abs(x_next - a) < a / 100):
